@@ -1,0 +1,13 @@
+git config --global credential.helper '!aws codecommit credential-helper $@'
+git config --global credential.UseHttpPath true
+
+git config --global user.name "xxx"
+git config --global user.email "xxx@xxx"
+
+git clone xxx # CodeCommit 画面からコピーしてください
+
+cd h4b-hands-on/
+
+git add -A
+git commit -m "init."
+git push origin master
