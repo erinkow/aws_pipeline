@@ -2,7 +2,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - aws deploy push --application-name h4b-app2 --s3-location s3://wanko-artifact/artifact.zip --source source
+      - aws deploy push --application-name h4b-app2 --s3-location s3://wanko-bucket2/artifact.zip --source source
 artifacts:
   files:
     - '**/*'
